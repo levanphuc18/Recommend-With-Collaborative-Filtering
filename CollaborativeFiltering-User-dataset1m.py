@@ -69,7 +69,6 @@ best_rmse = model_tune.best_score['rmse']
 best_mae = model_tune.best_score['mae']
 best_params = model_tune.best_params['rmse']    # Lấy ra các siêu tham số tốt nhất
 
-
 best_model = SVD(**best_params) # Tạo mô hình mới với siêu tham số tốt nhất
 best_model.fit(surprise_data.build_full_trainset()) # Huấn luyện mô hình trên toàn bộ tập huấn luyện
 predictions = best_model.test(testset)  # Dự đoán trên tập kiểm tra
@@ -98,7 +97,6 @@ mae_score = mae(predictions)
 # print(f"RMSE: {rmse_score}")
 # print(f"MAE: {mae_score}")
 # print("===================================")
-
 
 
 # Top-10 recommenations for a user
