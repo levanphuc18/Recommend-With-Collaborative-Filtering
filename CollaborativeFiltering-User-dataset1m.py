@@ -99,6 +99,7 @@ mae_score = mae(predictions)
 # print("===================================")
 
 
+
 # Top-10 recommenations for a user
 
 #  top-N recommendations for a user
@@ -118,7 +119,6 @@ predictions = [best_model.predict(customer_id, product_id) for product_id in pro
 
 # Sắp xếp theo thứ tự giảm dần của rating dự đoán
 predictions.sort(key=lambda x: x.est, reverse=True)
-
 
 top_n_recommendations = [prediction.iid for prediction in predictions[:n]]
 print(f"\nTop-{n} Recommendations for User {customer_id}:", top_n_recommendations)
