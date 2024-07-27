@@ -7,7 +7,7 @@ product_id = str(sys.argv[1])
 
 # Open our existing CSV file in append mode
 # Create a file object for this file
-with open('D:\\JAVA\\Eclipse\\Doanthuctap\\webbantivi\\WebContent\\resources\\python\\dataFavorite\\products.csv', 'a') as f_object:
+with open('D:\\JAVA\\Eclipse\\Doanthuctap\\webbantivi\\WebContent\\resources\\python\\dataset\\products.csv', 'a') as f_object:
 
     # Pass this file object to csv.writer()
     # and get a writer object
